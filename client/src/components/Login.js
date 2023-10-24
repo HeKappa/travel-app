@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 function Login()  {
   const [email, setEmail] = useState('');
@@ -41,6 +42,11 @@ function Login()  {
             >
               Login
             </button>
+          </div>
+          <div className="flex items-center justify-between">
+            <Link to="/register" className="inline-block align-baseline font-bold text-sm text-blue-500 hover:text-blue-800 align:center" href="#">
+              Don't have an account? Register
+            </Link>
           </div>
         </form>
       </div>
