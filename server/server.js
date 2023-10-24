@@ -12,7 +12,10 @@ app.use(express.urlencoded({ extended: true }));
 
 
 // ... middlewares and other setup
+// Registration route
+app.post('/register', registerUser);
 
+// ... your other routes
 // Routes usage
 app.use('/api/users', userRoutes);
 app.use('/api/destinations', destinationRoutes);
